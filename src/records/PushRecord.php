@@ -145,7 +145,7 @@ class PushRecord extends ActiveRecord
      */
     public function getAttemptCount()
     {
-        return $this->execTotal['attempts'] ?: 0;
+        return $this->execTotal['attempts'] ?? 0;
     }
 
     /**
